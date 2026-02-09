@@ -4,12 +4,17 @@ l<!DOCTYPE html>
   <meta charset="UTF-8">
   <title>Hasil Scan QR Personil</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #eef2f7;
-      margin: 0;
-      padding: 0;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  overflow-y: auto;
+}
 
     .header {
       background: #0f3a5f;
@@ -29,10 +34,17 @@ l<!DOCTYPE html>
       font-weight: bold;
       line-height: 1.3;
     }
+    
+    .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
     .container {
       max-width: 420px;
-      margin: 20px auto;
+      margin: 0 auto;
+      padding: 16px;
       background: white;
       border-radius: 12px;
       overflow: hidden;
