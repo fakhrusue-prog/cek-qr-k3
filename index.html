@@ -2,95 +2,109 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Sertifikat K3</title>
+  <title>Hasil Scan QR Personil</title>
   <style>
     body {
-      font-family: "Times New Roman", serif;
+      font-family: Arial, sans-serif;
       background: #e5e7eb;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
     }
 
-    .certificate {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border: 6px solid #0f766e;
+    .header {
+      background: #0f3a5f;
+      color: white;
+      padding: 15px;
       text-align: center;
-    }
-
-    .title {
-      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 10px;
     }
 
-    .subtitle {
-      font-size: 16px;
-      margin-bottom: 30px;
+    .container {
+      max-width: 420px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,.15);
     }
 
-    .name {
-      font-size: 26px;
+    .card-header {
+      background: #123f66;
+      color: white;
+      text-align: center;
+      padding: 15px;
       font-weight: bold;
+    }
+
+    .photo {
+      text-align: center;
       margin: 20px 0;
-      text-decoration: underline;
     }
 
-    .content {
-      font-size: 16px;
-      line-height: 1.6;
+    .photo img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid #1f2937;
     }
 
-    .status {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      color: green;
-    }
-
-    .footer {
-      margin-top: 40px;
-      display: flex;
-      justify-content: space-between;
+    .data {
+      padding: 15px;
       font-size: 14px;
     }
 
-    .box {
-      border-top: 1px solid #000;
-      width: 200px;
-      margin: auto;
-      padding-top: 5px;
+    .row {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .label {
+      width: 45%;
+      font-weight: bold;
+    }
+
+    .value {
+      width: 55%;
+    }
+
+    .footer {
+      background: #123f66;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
     }
   </style>
 </head>
 <body>
 
-<div class="certificate">
-  <div class="title">SERTIFIKAT KELAYAKAN K3</div>
-  <div class="subtitle">Keselamatan dan Kesehatan Kerja</div>
+<div class="header">
+  HASIL SCAN QR PERSONIL
+</div>
 
-  <p class="content">Diberikan kepada:</p>
+<div class="container">
+  <div class="card-header">
+    BIODATA PERSONIL
+  </div>
 
-  <div class="name">Ahmad Fakhrudin</div>
+  <div class="photo">
+    <img src="foto.jpg" alt="Foto Personil">
+  </div>
 
-  <p class="content">
-    Nomor Sertifikat: <b>0121281453</b><br>
-    Telah dinyatakan memenuhi standar<br>
-    Keselamatan dan Kesehatan Kerja (K3)
-  </p>
-
-  <div class="status">STATUS: VALID</div>
+  <div class="data">
+    <div class="row"><div class="label">Nama</div><div class="value">: Ahmad Fakhrudin</div></div>
+    <div class="row"><div class="label">Tempat Lahir</div><div class="value">: Tangerang</div></div>
+    <div class="row"><div class="label">Tanggal Lahir</div><div class="value">: 2003-06-18</div></div>
+    <div class="row"><div class="label">Perusahaan</div><div class="value">: PT. Claro Kreasi Abadi</div></div>
+    <div class="row"><div class="label">Jenis Alat</div><div class="value">: Gondola</div></div>
+    <div class="row"><div class="label">Klasifikasi</div><div class="value">: Operator Gondola</div></div>
+    <div class="row"><div class="label">No Registrasi</div><div class="value">: 0121281453</div></div>
+    <div class="row"><div class="label">Kelas</div><div class="value">: Non Kelas</div></div>
+    <div class="row"><div class="label">Masa Berlaku</div><div class="value">: 2029-07-25</div></div>
+  </div>
 
   <div class="footer">
-    <div>
-      Tangerang, 09 Februari 2026
-      <div class="box">Tanggal</div>
-    </div>
-    <div>
-      <br>
-      <div class="box">Penanggung Jawab</div>
-    </div>
+    STATUS: <b>VALID</b>
   </div>
 </div>
 
