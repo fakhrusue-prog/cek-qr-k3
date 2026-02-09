@@ -2,36 +2,96 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Cek QR K3</title>
+  <title>Sertifikat K3</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-    }
-    .card {
-      max-width: 420px;
-      background: #fff;
+      font-family: "Times New Roman", serif;
+      background: #e5e7eb;
       padding: 20px;
-      margin: 60px auto;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,.1);
     }
-    h2 {
+
+    .certificate {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border: 6px solid #0f766e;
       text-align: center;
     }
-    .status {
-      color: green;
+
+    .title {
+      font-size: 28px;
       font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 20px 0;
+      text-decoration: underline;
+    }
+
+    .content {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+
+    .footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .box {
+      border-top: 1px solid #000;
+      width: 200px;
+      margin: auto;
+      padding-top: 5px;
     }
   </style>
 </head>
 <body>
 
-<div class="card">
-  <h2>CEK QR K3</h2>
-  <p>Nama: <b>Ahmad Fakhrudin</b></p>
-  <p>ID Sertifikat: <b>0121281453</b></p>
-  <p>Status: <span class="status">VALID</span></p>
+<div class="certificate">
+  <div class="title">SERTIFIKAT KELAYAKAN K3</div>
+  <div class="subtitle">Keselamatan dan Kesehatan Kerja</div>
+
+  <p class="content">Diberikan kepada:</p>
+
+  <div class="name">Ahmad Fakhrudin</div>
+
+  <p class="content">
+    Nomor Sertifikat: <b>0121281453</b><br>
+    Telah dinyatakan memenuhi standar<br>
+    Keselamatan dan Kesehatan Kerja (K3)
+  </p>
+
+  <div class="status">STATUS: VALID</div>
+
+  <div class="footer">
+    <div>
+      Tangerang, 09 Februari 2026
+      <div class="box">Tanggal</div>
+    </div>
+    <div>
+      <br>
+      <div class="box">Penanggung Jawab</div>
+    </div>
+  </div>
 </div>
 
 </body>
