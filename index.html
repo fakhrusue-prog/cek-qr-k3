@@ -119,8 +119,23 @@ l<!DOCTYPE html>
 }
 
 .bottom-logos img {
-  height: 45px;
+  height: 42px;
+  max-width: 90px;
   object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .bottom-logos img {
+    height: 36px;
+    max-width: 80px;
+  }
+
+  .address {
+    font-size: 12px;
+  }
 }
 
 .address {
